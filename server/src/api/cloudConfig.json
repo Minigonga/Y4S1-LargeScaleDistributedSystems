@@ -1,0 +1,22 @@
+{
+  "numServers": 5,
+  "servers": [5000, 5001, 5002, 5003, 5004],
+  "baseHost": 5000,
+  "neighbors": 2,
+  "db_update": 10000,
+  "client_cloud_update": 10000,
+  "server_neighbor_update": 10000,
+  "server_recovery": 20000,
+  "quorum": {
+    "N": 3,
+    "R": 2,
+    "W": 2
+  },
+  "coordinator": {
+    "httpPort": 7000,
+    "zmqPort": 7100
+  },
+  "storage": {
+    "zmqPortOffset": 1000
+  }
+}
